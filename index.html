@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Bacteria Blaster</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="./common/webgl-utils.js"></script> 
+        <script type="text/javascript" src="./common/gl-matrix.js"></script>
+        <script type="text/javascript" src="./javascript/app.js"></script>
+    </head>
+    <body>
+        <script id="vertex-shader" type="not-javascript">
+            precision mediump float;
+
+            attribute vec3 position;
+            attribute vec3 color;
+            uniform mat4 world;
+            uniform mat4 view;
+            uniform mat4 proj;
+            varying vec3 fragColor;
+
+            void main()
+            {
+                mat4 mvp = proj*view*world;
+            	fragColor = color;
+            	gl_Position = mvp*vec4(position,1.0);
+            	gl_PointSize = 10.0;
+            }
+        </script>
+        <script id="fragment-shader" type="not-javascript">
+            precision mediump float;
+
+            varying vec3 fragColor;
+            void main()
+            {
+            	gl_FragColor = vec4(fragColor,1.0);
+            }
+        </script>
+        <div id="main">
+            <h1 id="main_header"> Bacteria Blaster </h1>
+            <canvas id="canvas">
+                Oops ... your browser doesn't support the HTML5 canvas element
+            </canvas>
+            <div id="scoreboard">
+                <p>
+                    <span class="points" id="score"></span>
+                    
+                    <img class="health" id="life1" src="./images/heart.png" alt="heart"/> 
+                    <img class="health" id="life2" src="./images/heart.png" alt="heart"/>
+                    
+                    <span class="points" id="bacLeft"></span>
+                </p>   
+            </div>
+        </div>
+    </body>
+</html>

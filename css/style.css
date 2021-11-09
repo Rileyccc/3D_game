@@ -1,0 +1,62 @@
+body{
+    background-image: url('../images/background.jpg')
+}
+#main{
+    margin:0, auto;
+    text-align: center;
+}
+
+#main_header{
+    color: rgb(207, 204, 204);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#canvas{
+    border:5px solid rgb(207, 204, 204);
+    z-index: -3;
+}
+#scoreboard{
+    border:5px solid rgb(207, 204, 204);
+    background-color: black;
+    margin: auto;
+    text-align:start;  
+}
+.health{
+    height:50px;
+    width:50px
+}
+.points{
+    padding-left: 2em;
+    padding-right: 2em;
+    color: rgb(207, 204, 204);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+.win{
+    border:5px solid rgb(207, 204, 204);
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: rgb(112, 218, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6em;
+
+}
+.lose{
+    border:5px solid rgb(207, 204, 204);
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: rgb(218, 26, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6em;
+}
+#btn{
+    background-color: rgb(207, 204, 204); 
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.5em;
+
+}
