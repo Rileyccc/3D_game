@@ -544,7 +544,7 @@ window.onload = function init()
 
     // create particles 
     function create_particles(bacX, bacY, bacZ, bacColor){
-        var numOfParticles = 10 + Math.random()*20;
+        var numOfParticles = 10 + Math.random()*30;
         for(var i =0; i < numOfParticles; i++){
 
             // randomly generate a positive or negitive num
@@ -600,14 +600,6 @@ window.onload = function init()
                 }
             }
         }
-        //sort bacteriae array if being consumed move to the front
-        // bacteriae.sort(function(a){
-        //     if (a.consumed){
-        //         return -1;
-        //     }
-        //     return 1;
-        // })
-
 
         // clear background set colour
         gl.clearColor(0,0,0,1.0);
@@ -643,11 +635,11 @@ window.onload = function init()
         }
 
         // // remove expired particles
-        // bacteriae.forEach((bac, index, object) =>{
-        //     if(bac.removeMe == true){
-        //         object.splice(index, 1);
-        //     }
-        // });
+        particles.forEach((part, index, object) =>{
+            if(part.removeMe == true){
+                object.splice(index, 1);
+            }
+        });
         
 
 
