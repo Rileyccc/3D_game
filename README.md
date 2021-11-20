@@ -13,6 +13,17 @@ To play download source code and run index.html
 Left click on bacteria to destroy them. 
 Right click and move the mouse to rotate the sphere.  
 
-## Gameplay Examples
+## Gameplay Images
 
-![alt text](https://github.com/Rileyccc/2d_game/blob/main/gamePlayImages/gameplay1.png)
+![alt text](https://github.com/Rileyccc/Bacteria_Blaster_3D/blob/main/gamePlayImages/1.png)
+When the game starts the player has two life’s, a score of 0, and there are 20 bacteria remaining
+![alt text](https://github.com/Rileyccc/Bacteria_Blaster_3D/blob/main/gamePlayImages/2.png)
+Here is an example of what happens when two bacteria collide the larger bacteria consumes the smaller one.
+![alt text](https://github.com/Rileyccc/Bacteria_Blaster_3D/blob/main/gamePlayImages/3.png)
+When a bacteria is clicked particles are generated which disperse in an random 3d direction.
+![alt text](https://github.com/Rileyccc/Bacteria_Blaster_3D/blob/main/gamePlayImages/4.png)
+When a Player loses a life one of the hearts is removed.
+![alt text](https://github.com/Rileyccc/Bacteria_Blaster_3D/blob/main/gamePlayImages/5.png)
+When a player losses both life’s this screen appears. 
+![alt text](https://github.com/Rileyccc/Bacteria_Blaster_3D/blob/main/gamePlayImages/6.png)
+When a User kills all bacteria without losing both hearts this wining screen is shown. 
