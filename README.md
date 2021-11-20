@@ -12,3 +12,7 @@ To play download source code and run index.html
 ### Instructions
 Left click on bacteria to destroy them. 
 Right click and move the mouse to rotate the sphere.  
+
+## Gameplay Examples
+
+![alt text](https://github.com/Rileyccc/2d_game/blob/main/gamePlayImages/gameplay1.png)
